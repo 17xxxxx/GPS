@@ -1,0 +1,8 @@
+<!--
+  alarm 模块 Mapper XML 占位文件，负责沉淀复杂 SQL 与动态查询模板。
+  该文件用于将 SQL 与 Java 接口解耦，便于 DBA 与开发协同优化。
+  当前阶段仅提供结构骨架，后续结合 Mapper 接口补充具体语句。
+-->
+<mapper namespace="com.company.gps.modules.alarm.mapper.AlarmMapper">
+    <!-- TODO: SQL mapping for alarm module -->
+</mapper>

@@ -1,0 +1,8 @@
+# 主配置文件：定义系统默认环境与通用参数。
+# 该文件是多环境配置聚合入口，避免配置分散难以管理。
+# 骨架阶段仅保留基础键值，后续请按实际中间件地址补充。
+spring:
+  application:
+    name: gps-dispatch-platform
+  profiles:
+    active: dev

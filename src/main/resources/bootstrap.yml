@@ -1,0 +1,7 @@
+# 引导配置文件：用于应用启动早期加载远程配置或基础引导参数。
+# 该文件在 Spring Boot 启动前期生效，常用于配置中心与命名空间配置。
+# 骨架阶段先保留模板，后续可接入 Nacos/Apollo 等配置组件。
+spring:
+  cloud:
+    bootstrap:
+      enabled: false

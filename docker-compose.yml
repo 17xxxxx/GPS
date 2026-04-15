@@ -1,0 +1,12 @@
+# 该文件用于本地或测试环境一键编排服务与中间件。
+# 当前提供应用服务占位，便于后续接入 MySQL、Redis、RocketMQ 联调。
+# 通过 compose 可以快速复现实验环境，降低部署门槛。
+version: "3.9"
+services:
+  gps-backend:
+    build: .
+    container_name: gps-backend
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: dev

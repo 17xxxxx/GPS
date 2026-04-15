@@ -1,0 +1,11 @@
+<!--
+  日志配置文件用于统一控制日志级别、格式与输出目的地。
+  其职责是保证排障与审计信息可追踪，支撑生产运维与问题定位。
+  当前为骨架配置，后续可扩展按业务模块拆分日志文件策略。
+-->
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder><pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern></encoder>
+    </appender>
+    <root level="INFO"><appender-ref ref="STDOUT"/></root>
+</configuration>
